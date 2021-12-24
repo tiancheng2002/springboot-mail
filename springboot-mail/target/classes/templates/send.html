@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>验证验证码</title>
+</head>
+<body>
+
+    <form action="/test" method="post">
+        <input type="text" name="captcha" placeholder="请输入六位验证码"><span th:text="${errorMessage}"></span><br>
+        <input type="submit" value="确定">
+    </form>
+
+</body>
+</html>
